@@ -674,7 +674,56 @@ font-size:14px;
   <p>© 2025 TemuEarn Guide · <span class="en-text">Independent creator resource. Not officially affiliated with Temu.</span><span class="ur-text">Independent creator guide. Officially Temu se koi taluq nahi.</span></p>
   <p style="margin-top:6px;"><span class="en-text">Results vary by account level, content quality and post approval.</span><span class="ur-text">Nataij account level, content quality aur approval rate ke hisaab se mukhtalif hote hain.</span></p>
 </footer>
+<section id="comments" style="padding:60px 20px;max-width:900px;margin:auto;">
 
+<h2 style="margin-bottom:20px;">
+Community Comments
+</h2>
+
+<button id="loginBtn" style="
+padding:12px 20px;
+background:#ff5c00;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+margin-bottom:20px;
+">
+Login With Google
+</button>
+
+<div id="commentBox" style="display:none;">
+
+<textarea id="commentInput" placeholder="Write your comment..."
+style="
+width:100%;
+height:120px;
+padding:15px;
+border-radius:10px;
+background:#111;
+color:white;
+border:1px solid #333;
+margin-bottom:15px;
+"></textarea>
+
+<button id="submitComment" style="
+padding:12px 20px;
+background:#ff5c00;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+">
+Submit Comment
+</button>
+
+</div>
+
+<div id="commentsList" style="margin-top:40px;"></div>
+
+</section>
 <script>
 // ─── LANG SWITCHER ───
 function setLang(lang) {
