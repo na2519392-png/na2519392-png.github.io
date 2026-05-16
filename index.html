@@ -762,37 +762,6 @@ const db = getFirestore(app);
 console.log("Firebase Connected");
 console.log("Firebase Connected");
 
-const provider = new GoogleAuthProvider();
-
-const loginBtn = document.getElementById("googleLoginBtn");
-const userInfo = document.getElementById("userInfo");
-
-loginBtn.addEventListener("click", async () => {
-
-  try {
-
-    const result = await signInWithPopup(auth, provider);
-
-    const user = result.user;
-
-    userInfo.innerHTML = `
-      Logged in as:<br>
-      ${user.displayName}
-    `;
-
-    loginBtn.style.display = "none";
-
-    console.log(user);
-
-  } catch (error) {
-
-    console.log(error);
-
-    alert("Login Failed");
-
-  }
-
-});
 
 
 onAuthStateChanged(auth, (user) => {
